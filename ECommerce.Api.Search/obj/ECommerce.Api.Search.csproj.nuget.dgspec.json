@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj": {}
+  },
+  "projects": {
+    "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
+        "projectName": "ECommerce.Api.Search",
+        "projectPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
+        "packagesPath": "C:\\Users\\Mayank.Pant\\.nuget\\packages\\",
+        "outputPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Search\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mayank.Pant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "F:\\localnuggetsource": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://carvue.pkgs.visualstudio.com/_packaging/Autino/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
