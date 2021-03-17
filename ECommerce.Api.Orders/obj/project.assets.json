@@ -1545,11 +1545,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Orders\\ECommerce.Api.Orders.csproj",
+      "projectUniqueName": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Orders\\ECommerce.Api.Orders.csproj",
       "projectName": "ECommerce.Api.Orders",
-      "projectPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Orders\\ECommerce.Api.Orders.csproj",
+      "projectPath": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Orders\\ECommerce.Api.Orders.csproj",
       "packagesPath": "C:\\Users\\Mayank.Pant\\.nuget\\packages\\",
-      "outputPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Orders\\obj\\",
+      "outputPath": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Orders\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

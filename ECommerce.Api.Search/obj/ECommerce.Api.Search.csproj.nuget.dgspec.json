@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj": {}
+    "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj": {}
   },
   "projects": {
-    "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj": {
+    "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
+        "projectUniqueName": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
         "projectName": "ECommerce.Api.Search",
-        "projectPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
+        "projectPath": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
         "packagesPath": "C:\\Users\\Mayank.Pant\\.nuget\\packages\\",
-        "outputPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Search\\obj\\",
+        "outputPath": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Search\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

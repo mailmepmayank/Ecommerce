@@ -11,25 +11,24 @@ services:
         com.microsoft.visual-studio.project-name: "ECommerce.Api.Customers"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
-      - NUGET_PACKAGES=C:\.nuget\packages
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
     volumes:
-      - F:\Github-Ecommerce\Ecommerce\ECommerce.Api.Customers:C:\app
-      - F:\Github-Ecommerce\Ecommerce:C:\src
-      - C:\Users\Mayank.Pant\onecoremsvsmon\16.9.1151.0:C:\remote_debugger:ro
-      - C:\Users\Mayank.Pant\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
-      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
-      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - F:\F\MicroserviceEcommerceAzureRepo\Ecommerce\ECommerce.Api.Customers:/app
+      - F:\F\MicroserviceEcommerceAzureRepo\Ecommerce:/src
+      - C:\Users\Mayank.Pant\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Mayank.Pant\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: tail -f /dev/null
     labels:
-      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages  \"C:\\src\\..\\..\\rdiaz\\ecommerce\\ECommerce.Api.Customers\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Customers.dll\""
-      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
-      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
-
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/netcoreapp3.1/ECommerce.Api.Customers.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
   ecommerce.api.orders:
     image: ecommerceapiorders:dev
     container_name: ECommerce.Api.Orders
@@ -40,25 +39,24 @@ services:
         com.microsoft.visual-studio.project-name: "ECommerce.Api.Orders"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
-      - NUGET_PACKAGES=C:\.nuget\packages
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
     volumes:
-      - F:\Github-Ecommerce\Ecommerce\ECommerce.Api.Orders:C:\app
-      - F:\Github-Ecommerce\Ecommerce:C:\src
-      - C:\Users\Mayank.Pant\onecoremsvsmon\16.9.1151.0:C:\remote_debugger:ro
-      - C:\Users\Mayank.Pant\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
-      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
-      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - F:\F\MicroserviceEcommerceAzureRepo\Ecommerce\ECommerce.Api.Orders:/app
+      - F:\F\MicroserviceEcommerceAzureRepo\Ecommerce:/src
+      - C:\Users\Mayank.Pant\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Mayank.Pant\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: tail -f /dev/null
     labels:
-      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages  \"C:\\src\\..\\..\\rdiaz\\ecommerce\\ECommerce.Api.Orders\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Orders.dll\""
-      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
-      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
-
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/netcoreapp3.1/ECommerce.Api.Orders.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
 
   ecommerce.api.products:
     image: ecommerceapiproducts:dev
@@ -70,25 +68,24 @@ services:
         com.microsoft.visual-studio.project-name: "ECommerce.Api.Products"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
-      - NUGET_PACKAGES=C:\.nuget\packages
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
     volumes:
-      - F:\Github-Ecommerce\Ecommerce\ECommerce.Api.Products:C:\app
-      - F:\Github-Ecommerce\Ecommerce:C:\src
-      - C:\Users\Mayank.Pant\onecoremsvsmon\16.9.1151.0:C:\remote_debugger:ro
-      - C:\Users\Mayank.Pant\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
-      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
-      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - F:\F\MicroserviceEcommerceAzureRepo\Ecommerce\ECommerce.Api.Products:/app
+      - F:\F\MicroserviceEcommerceAzureRepo\Ecommerce:/src
+      - C:\Users\Mayank.Pant\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Mayank.Pant\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: tail -f /dev/null
     labels:
-      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages  \"C:\\src\\..\\..\\rdiaz\\ecommerce\\ECommerce.Api.Products\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Products.dll\""
-      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
-      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
-
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/netcoreapp3.1/ECommerce.Api.Products.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
 
   ecommerce.api.search:
     image: ecommerceapisearch:dev
@@ -100,22 +97,21 @@ services:
         com.microsoft.visual-studio.project-name: "ECommerce.Api.Search"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
-      - NUGET_PACKAGES=C:\.nuget\packages
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
     volumes:
-      - F:\Github-Ecommerce\Ecommerce\ECommerce.Api.Search:C:\app
-      - F:\Github-Ecommerce\Ecommerce:C:\src
-      - C:\Users\Mayank.Pant\onecoremsvsmon\16.9.1151.0:C:\remote_debugger:ro
-      - C:\Users\Mayank.Pant\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
-      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
-      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - F:\F\MicroserviceEcommerceAzureRepo\Ecommerce\ECommerce.Api.Search:/app
+      - F:\F\MicroserviceEcommerceAzureRepo\Ecommerce:/src
+      - C:\Users\Mayank.Pant\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Mayank.Pant\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: tail -f /dev/null
     labels:
-      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages  \"C:\\src\\..\\..\\rdiaz\\ecommerce\\ECommerce.Api.Search\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Search.dll\""
-      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
-      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
-
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/netcoreapp3.1/ECommerce.Api.Search.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

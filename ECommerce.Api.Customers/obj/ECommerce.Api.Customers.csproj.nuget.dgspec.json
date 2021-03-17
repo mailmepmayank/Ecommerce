@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Customers\\ECommerce.Api.Customers.csproj": {}
+    "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Customers\\ECommerce.Api.Customers.csproj": {}
   },
   "projects": {
-    "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Customers\\ECommerce.Api.Customers.csproj": {
+    "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Customers\\ECommerce.Api.Customers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Customers\\ECommerce.Api.Customers.csproj",
+        "projectUniqueName": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Customers\\ECommerce.Api.Customers.csproj",
         "projectName": "ECommerce.Api.Customers",
-        "projectPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Customers\\ECommerce.Api.Customers.csproj",
+        "projectPath": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Customers\\ECommerce.Api.Customers.csproj",
         "packagesPath": "C:\\Users\\Mayank.Pant\\.nuget\\packages\\",
-        "outputPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Customers\\obj\\",
+        "outputPath": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Customers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

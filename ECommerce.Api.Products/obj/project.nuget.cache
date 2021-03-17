@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VdKtaZZc/ar4HfKFl6oipxd3FeYMGAd7AMwp7kFpPl7nvTsldVnCkmm62kZlFjkR65D+BMz49VLhKWOLCLJa+A==",
+  "dgSpecHash": "t0nX1TpQB+jWg+jCD6Y9BgGb6XB9EUiPaka1wW6K2SHgauZ8TwtGuqgrzrbVbxtjXEq8gWweOUq5CDK8YZDA7Q==",
   "success": true,
-  "projectFilePath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj",
+  "projectFilePath": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mayank.Pant\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Mayank.Pant\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

@@ -9372,11 +9372,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Products.Tests\\ECommerce.Api.Products.Tests.csproj",
+      "projectUniqueName": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Products.Tests\\ECommerce.Api.Products.Tests.csproj",
       "projectName": "ECommerce.Api.Products.Tests",
-      "projectPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Products.Tests\\ECommerce.Api.Products.Tests.csproj",
+      "projectPath": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Products.Tests\\ECommerce.Api.Products.Tests.csproj",
       "packagesPath": "C:\\Users\\Mayank.Pant\\.nuget\\packages\\",
-      "outputPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Products.Tests\\obj\\",
+      "outputPath": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Products.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9398,8 +9398,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj": {
-              "projectPath": "F:\\Github-Ecommerce\\Ecommerce\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj"
+            "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj": {
+              "projectPath": "F:\\F\\MicroserviceEcommerceAzureRepo\\Ecommerce\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj"
             }
           }
         }
