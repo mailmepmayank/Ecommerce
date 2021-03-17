@@ -20,8 +20,6 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "6001:80"
-    networks:
-      - my-network
 
 
   ecommerce.api.search:
